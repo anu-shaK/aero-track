@@ -1,0 +1,17 @@
+export default {
+  light: "#D3D3D3",
+  medium: "#6e6969",
+  white: "#fff",
+  black: "#000",
+  background: "#f8f4f4",
+  dark: "#0c0c0c",
+  delete: "#ae1c28",
+  deleteHome: "tomato",
+  add: "#ff4f00",
+  background: "#F7F1F1",
+  copy: "#21468b",
+  header: "#ff6600",
+  aquagreen: "#00a571",
+  darkBackground: "#141414",
+  shadowDark: "#070707",
+};
