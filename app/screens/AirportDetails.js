@@ -23,15 +23,25 @@ export default function AirportDetails({ route }) {
 
   var j = 0;
   var airportDetails = [];
-  for (var i in airport) {
-    var obj = {
-      ["id"]: j++,
-      ["title"]: i,
-      ["value"]: airport[i],
-    };
-    airportDetails.push(obj);
+  for (var key in airport) {
+    if (key === "Fields") {
+      for (var fieldKey in airport[key]) {
+        let fieldObj = {
+          ["id"]: j++,
+          ["title"]: fieldKey,
+          ["value"]: airport[key][fieldKey],
+        };
+        airportDetails.push(fieldObj);
+      }
+    } else {
+      var obj = {
+        ["id"]: j++,
+        ["title"]: key,
+        ["value"]: airport[key],
+      };
+      airportDetails.push(obj);
+    }
   }
-  console.log(airportDetails);
 
   return (
     <Screen style={[styles.screen, { backgroundColor: theme.background }]}>

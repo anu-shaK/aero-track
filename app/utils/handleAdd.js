@@ -2,6 +2,7 @@ import firebase from "firebase";
 import { Alert } from "react-native";
 
 const handleAdd = (values) => {
+  console.log("Values", values);
   const db = firebase.firestore();
   db.collection("Airports")
     .doc(values.code)

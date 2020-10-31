@@ -4,7 +4,7 @@ import { useFormikContext } from "formik";
 
 import AppButton from "../AppButton";
 import colors from "../../config/colors";
-import themeContext from "/Users/anuk/Desktop/Desk/Coding/AeroTrack/app/config/themeContext.js";
+import themeContext from "../../config/themeContext.js";
 
 export default function MenuOptions({ title }) {
   const theme = useContext(themeContext);
